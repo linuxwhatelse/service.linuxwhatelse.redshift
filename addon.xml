@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.linuxwhatelse.redshift"
+       name="Redshift"
+       version="0.0.1"
+       provider-name="linuxwhatelse">
+
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+    </requires>
+
+    <extension point="xbmc.service" library="service.py" start="login"/>
+
+    <extension point="xbmc.python.script" library="script.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <platform>linux</platform>
+        <summary lang="en_GB">Redshift - Screeen temperature adjustment</summary>
+        <description lang="en_GB">Redshift adjusts the color temperature of your screen according to your surroundings.
+
+Requires Redshift to be installed!
+
+Keyboard shortcuts can be defined like:
+<![CDATA[
+<keymap>
+    <global>
+        <keyboard>
+            <!-- Toggle redshift on/off -->
+            <t mod="ctrl">RunScript(service.linuxwhatelse.redshift,toggle)</t>
+
+            <!-- Turn redshift on -->
+            <o mod="ctrl">RunScript(service.linuxwhatelse.redshift,on)</o>
+
+            <!-- Turn redshift off -->
+            <k mod="ctrl">RunScript(service.linuxwhatelse.redshift,off)</k>
+        </keyboard>
+    </global>
+</keymap>
+]]>
+</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <website>http://www.linuxwhatelse.com</website>
+        <email>info@linuxwhatelse.com</email>
+        <source>https://github.com/linuxwhatelse/service.linuxwhatelse.redshift</source>
+    </extension>
+</addon>

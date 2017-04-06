@@ -1,0 +1,94 @@
+# Kodi Media Center language file
+# Addon Name: Redshift
+# Addon id: service.linuxwhatelse.redshift
+# Addon Provider: linuxwhatelse
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: tadly@linuxwhatelse.de\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: linuxwhatelse\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "General"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Day"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Night"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Brightness"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Temperature"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Gamma (Red)"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Gamma (Green)"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Gamma (Blue)"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Location (latitude)"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Location (longitude)"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Transition"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Turn redshift off and on again for the changes to take effect.\nYou can also simply disable/enable the add-on."
+msgstr ""
+
+msgctxt "#30012"
+msgid "Turning on"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Was on already"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Turning off"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Was off already"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Toggle"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Turn on"
+msgstr ""
+
+msgctxt "#30018"
+msgid "Turn off"
+msgstr ""
+
