@@ -37,15 +37,15 @@ msgid "Temperature"
 msgstr ""
 
 msgctxt "#30005"
-msgid "Gamma (Red)"
+msgid "Gamma correction (Red)"
 msgstr ""
 
 msgctxt "#30006"
-msgid "Gamma (Green)"
+msgid "Gamma correction (Green)"
 msgstr ""
 
 msgctxt "#30007"
-msgid "Gamma (Blue)"
+msgid "Gamma correction (Blue)"
 msgstr ""
 
 msgctxt "#30008"

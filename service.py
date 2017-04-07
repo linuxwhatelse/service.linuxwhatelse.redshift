@@ -127,9 +127,9 @@ def configure_redshift(rs):
     rs.brightness_day = float(addon.getSetting('day.brightness'))
     rs.brightness_night = float(addon.getSetting('night.brightness'))
 
-    #rs.gamma_day_r = float(addon.getSetting('day.gamma.r'))
-    #rs.gamma_day_g = float(addon.getSetting('day.gamma.g'))
-    #rs.gamma_day_b = float(addon.getSetting('day.gamma.b'))
+    rs.gamma_day_r = float(addon.getSetting('day.gamma.r'))
+    rs.gamma_day_g = float(addon.getSetting('day.gamma.g'))
+    rs.gamma_day_b = float(addon.getSetting('day.gamma.b'))
 
     #rs.gamma_night_r = float(addon.getSetting('night.gamma.r'))
     #rs.gamma_night_g = float(addon.getSetting('night.gamma.g'))

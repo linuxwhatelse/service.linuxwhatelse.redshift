@@ -46,6 +46,7 @@ class Redshift():
                '-b', '%s:%s' % (self.brightness_day, self.brightness_night),
                '-t', '%s:%s' % (self.temperature_day, self.temperature_night),
                '-l', '%s:%s' % (self.latitude, self.longitude),
+               '-g', '%s:%s:%s' % (self.gamma_day_r, self.gamma_day_g, self.gamma_day_b),
                '-m', self.adjust_method
         ]
 

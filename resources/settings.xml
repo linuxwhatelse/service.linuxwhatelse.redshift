@@ -11,6 +11,10 @@
 
         <setting label="30010" id="transition" type="bool" default="true" />
 
+        <setting label="30005" id="day.gamma.r" type="slider" option="float" range="0,0.025,1.0" default="1.0" />
+        <setting label="30006" id="day.gamma.g" type="slider" option="float" range="0,0.025,1.0" default="1.0" />
+        <setting label="30007" id="day.gamma.b" type="slider" option="float" range="0,0.025,1.0" default="1.0" />
+
         <!-- Day settings -->
         <setting label="30001" type="lsep" />
         <setting label="30004" id="day.temperature" type="text" default="5700K"/>
