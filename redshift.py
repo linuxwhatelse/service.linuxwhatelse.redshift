@@ -4,6 +4,8 @@ import signal
 import subprocess
 import threading
 
+import utils
+
 
 class Redshift():
     __proc = None
@@ -59,7 +61,26 @@ class Redshift():
     def __init__(self):
         pass
 
+    def __get_pids(self):
+        try:
+            pids = map(int, subprocess.check_output(['pidof', self.bin]).split(' '))
+        except subprocess.CalledProcessError:
+            pids = None
+
+        return pids
+
     def __start(self):
+        pids = self.__get_pids()
+        if pids:
+            utils.log('Found running instances, trying to stop them.')
+            try:
+                for pid in pids:
+                    os.kill(pid, signal.SIGINT)
+
+            except OSError:
+                utils.log('Unable to stop existing instances, bailing!')
+                return
+
         with self.__lock:
             self.__proc = subprocess.Popen(self._command)
 
@@ -75,7 +96,7 @@ class Redshift():
         t.daemon = True
         t.start()
 
-        self.__running.wait()
+        return self.__running.wait(1)
 
     def stop(self):
         if not self.is_running:

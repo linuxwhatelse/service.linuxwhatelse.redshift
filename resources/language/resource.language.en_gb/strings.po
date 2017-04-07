@@ -92,3 +92,7 @@ msgctxt "#30018"
 msgid "Turn off"
 msgstr ""
 
+msgctxt "#30019"
+msgid "Unable to start, maybe an instance is already running somewhere?"
+msgstr ""
+

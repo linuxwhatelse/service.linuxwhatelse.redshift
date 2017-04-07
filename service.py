@@ -138,13 +138,16 @@ def configure_redshift(rs):
 
 if __name__ == '__main__':
     recv = Receiver(fifo, do)
-
     if not recv.start():
         utils.log('Unable to start receiver pipe, exiting!')
         sys.exit(1)
 
     configure_redshift(rs)
-    rs.start()
+    if not rs.start():
+        utils.notify(utils.translate(30019))
+
+        recv.stop()
+        sys.exit(1)
 
     monitor = xbmc.Monitor()
     while not monitor.abortRequested():
@@ -155,3 +158,4 @@ if __name__ == '__main__':
 
     rs.stop()
     rs.reset()
+
