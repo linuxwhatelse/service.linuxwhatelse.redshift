@@ -40,8 +40,8 @@ Keyboard shortcuts can be defined like:
 ]]>
 </description>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-        <website>http://www.linuxwhatelse.com</website>
-        <email>info@linuxwhatelse.com</email>
+        <website>http://www.linuxwhatelse.de</website>
+        <email>info@linuxwhatelse.de</email>
         <source>https://github.com/linuxwhatelse/service.linuxwhatelse.redshift</source>
     </extension>
 </addon>
